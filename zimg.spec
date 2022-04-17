@@ -1,12 +1,11 @@
 Name:           zimg
-Version:        2.9.3
-Release:        2
+Version:        3.0.3
+Release:        1
 Summary:        Scaling, color space conversion, and dithering library
 License:        WTFPL
 URL:            https://github.com/sekrit-twc/zimg
 
 Source0:        %{url}/archive/release-%{version}/%{name}-%{version}.tar.gz
-Patch0:         gcc-10.patch
 
 BuildRequires:  autoconf automake gcc-c++ libtool
 
@@ -61,6 +60,9 @@ rm -fr %{buildroot}%{_docdir}/%{name}
 %{_libdir}/pkgconfig/%{name}.pc
 
 %changelog
+* Thu Apr 14 2022 YukariChiba <i@0x7f.cc> - 3.0.3-1
+- Upgrade version to 3.0.3
+
 * Mon Aug 02 2021 linjiaxin5 <linjiaxin5@huawei.com> - 2.9.3-2
 - Fix failure caused by GCC upgrade to 10
 
